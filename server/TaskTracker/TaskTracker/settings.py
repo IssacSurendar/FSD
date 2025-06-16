@@ -97,10 +97,10 @@ WSGI_APPLICATION = 'TaskTracker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'task_tracker',
-        'USER': 'root',
+        'NAME': 'tasktracker',
+        'USER': 'postgres',
         'PASSWORD': 'Surendar$20051996',
-        'HOST': 'tasktracker.cx20wqm0s819.ap-south-1.rds.amazonaws.com',  # or your DB host
+        'HOST': 'database-1.cx20wqm0s819.ap-south-1.rds.amazonaws.com',  # or your DB host
         'PORT': '5432',        # default PostgreSQL port
     }
 }
