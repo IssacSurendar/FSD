@@ -63,6 +63,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://13.200.215.99:5173",
 ]
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'TaskTracker.urls'
 
