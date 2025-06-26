@@ -392,6 +392,7 @@ class TaskViewSet(APIView):
         data['owner'] = User.objects.get(id=int(data.get('owner')))
         data['assigned_to'] = UserMeta.objects.get(id=int(data.get('assigned_to')))
         data['project'] = Project.objects.get(id=int(data.get('project')))
+        print(data)
         try:
             project_info, created = Task.objects.get_or_create(
                 title = data.get('title'),
