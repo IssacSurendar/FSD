@@ -389,7 +389,7 @@ class TaskViewSet(APIView):
         serializer = TaskSerializer(data=data)
         serializer.is_valid(raise_exception=True)
  
-        data['owner'] = UserMeta.objects.get(id=int(data.get('owner')))
+        data['owner'] = User.objects.get(id=int(data.get('owner')))
         data['assigned_to'] = UserMeta.objects.get(id=int(data.get('assigned_to')))
         data['project'] = Project.objects.get(id=int(data.get('project')))
         try:
